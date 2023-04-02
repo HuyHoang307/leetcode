@@ -1,4 +1,4 @@
-from ast import List
+from typing import List
 from functools import lru_cache
 
 
@@ -27,3 +27,8 @@ class Solution:
             return ans
 
         return dp(K - 1, 0, 0)
+    
+pizza = ["A..","AAA","..."]
+k = 3
+s= Solution()
+print(s.ways(pizza, k))
