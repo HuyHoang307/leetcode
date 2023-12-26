@@ -1084,6 +1084,15 @@
     {
         "label": "Solution",
         "kind": 6,
+        "importPath": "1155.number-of-dice-rolls-with-target-sum.1155.number-of-dice-rolls-with-target-sum",
+        "description": "1155.number-of-dice-rolls-with-target-sum.1155.number-of-dice-rolls-with-target-sum",
+        "peekOfCode": "class Solution:\n    def numRollsToTarget(self, d: int, f: int, target: int) -> int:\n        self.res = 0\n        memo = {}\n        def helper(d,target):\n            if target <= 0 or target > (d * f):\n                return 0\n            if d == 1:\n                return 1 \n            if (d, target) in memo:",
+        "detail": "1155.number-of-dice-rolls-with-target-sum.1155.number-of-dice-rolls-with-target-sum",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
         "importPath": "1254.number-of-closed-islands.1254.number-of-closed-islands",
         "description": "1254.number-of-closed-islands.1254.number-of-closed-islands",
         "peekOfCode": "class Solution:\n    def closedIsland(self, grid: List[List[int]]) -> int:\n        rows, cols = len(grid), len(grid[0])\n        count = 0\n        def dfs(i, j):\n            if i < 0 or j < 0 or i >= rows or j >= cols:\n                return False\n            if grid[i][j] == 1:\n                return True\n            grid[i][j] = 1",
